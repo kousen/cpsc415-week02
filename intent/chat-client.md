@@ -25,7 +25,7 @@ The developer running it from a terminal. Today they would either open the OpenR
 ## Success looks like
 1. `python chat_client.py "What is 2 + 2?"` prints `4` (or similar) and then a final line of the form `model=<name> input_tokens=<n> output_tokens=<n>`.
 2. Running with any required env var unset exits non-zero and prints a message naming the missing variable; no API call is made.
-3. `grep OPENROUTER_API_KEY chat_client.py` finds nothing — the source contains no key material.
+3. `grep "sk-or-" chat_client.py` finds nothing — the source contains no key material (only the env var's name, never its value).
 
 ## Open questions
 None — all settled in the interview.
